@@ -1,0 +1,150 @@
+Source: haskell-quickcheck-instances
+Maintainer: Debian Haskell Group <pkg-haskell-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Clint Adams <clint@debian.org>,
+Priority: optional
+Section: haskell
+Rules-Requires-Root: no
+Build-Depends:
+ cdbs,
+ debhelper (>= 10),
+ ghc (>= 8.4.3),
+ ghc-prof,
+ haskell-devscripts (>= 0.13),
+ libghc-quickcheck2-dev (>= 2.13.2),
+ libghc-quickcheck2-dev (<< 2.15),
+ libghc-quickcheck2-prof,
+ libghc-base-compat-dev (>= 0.10.5),
+ libghc-base-compat-dev (<< 0.12),
+ libghc-base-compat-prof,
+ libghc-case-insensitive-dev (>= 1.2.0.4),
+ libghc-case-insensitive-dev (<< 1.3),
+ libghc-case-insensitive-prof,
+ libghc-hashable-dev (>= 1.2.7.0),
+ libghc-hashable-dev (<< 1.4),
+ libghc-hashable-prof,
+ libghc-old-time-dev (>= 1.1.0.0),
+ libghc-old-time-dev (<< 1.2),
+ libghc-old-time-prof,
+ libghc-scientific-dev (>= 0.2.0.0),
+ libghc-scientific-dev (<< 0.4),
+ libghc-scientific-prof,
+ libghc-splitmix-dev (>= 0.0.2),
+ libghc-splitmix-dev (<< 0.2),
+ libghc-splitmix-prof,
+ libghc-tagged-dev (>= 0.8.5),
+ libghc-tagged-dev (<< 0.9),
+ libghc-tagged-prof,
+ libghc-these-dev (>= 1.1),
+ libghc-these-dev (<< 1.2),
+ libghc-these-prof,
+ libghc-time-compat-dev (>= 1.9.2.2),
+ libghc-time-compat-dev (<< 1.10),
+ libghc-time-compat-prof,
+ libghc-transformers-compat-dev (>= 0.6.5),
+ libghc-transformers-compat-dev (<< 0.7),
+ libghc-transformers-compat-prof,
+ libghc-unordered-containers-dev (>= 0.2.2.0),
+ libghc-unordered-containers-dev (<< 0.3),
+ libghc-unordered-containers-prof,
+ libghc-uuid-types-dev (>= 1.0.3),
+ libghc-uuid-types-dev (<< 1.1),
+ libghc-uuid-types-prof,
+ libghc-vector-dev (>= 0.9),
+ libghc-vector-dev (<< 0.13),
+ libghc-vector-prof,
+Build-Depends-Indep: ghc-doc,
+ libghc-quickcheck2-doc,
+ libghc-base-compat-doc,
+ libghc-case-insensitive-doc,
+ libghc-hashable-doc,
+ libghc-old-time-doc,
+ libghc-quickcheck2-doc,
+ libghc-scientific-doc,
+ libghc-splitmix-doc,
+ libghc-tagged-doc,
+ libghc-these-doc,
+ libghc-time-compat-doc,
+ libghc-transformers-compat-doc,
+ libghc-unordered-containers-doc,
+ libghc-uuid-types-doc,
+ libghc-vector-doc,
+Standards-Version: 4.5.0
+Homepage: https://github.com/phadej/qc-instances
+Vcs-Browser: https://salsa.debian.org/haskell-team/DHG_packages/tree/master/p/haskell-quickcheck-instances
+Vcs-Git: https://salsa.debian.org/haskell-team/DHG_packages.git [p/haskell-quickcheck-instances]
+
+Package: libghc-quickcheck-instances-dev
+Architecture: any
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Provides:
+ ${haskell:Provides},
+Description: common QuickCheck instances
+ QuickCheck instances.
+ .
+ The goal is to supply QuickCheck instances for
+ types provided by the Haskell Platform.
+ .
+ For information on writing a test-suite with Cabal
+ see <http://www.haskell.org/cabal/users-guide/#test-suites>
+ .
+  Author: Antoine Latter
+  Upstream-Maintainer: aslatter@gmail.com
+ .
+ This package contains the normal library files.
+
+Package: libghc-quickcheck-instances-prof
+Architecture: any
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Provides:
+ ${haskell:Provides},
+Description: common QuickCheck instances; profiling libraries
+ QuickCheck instances.
+ .
+ The goal is to supply QuickCheck instances for
+ types provided by the Haskell Platform.
+ .
+ For information on writing a test-suite with Cabal
+ see <http://www.haskell.org/cabal/users-guide/#test-suites>
+ .
+  Author: Antoine Latter
+  Upstream-Maintainer: aslatter@gmail.com
+ .
+ This package contains the libraries compiled with profiling enabled.
+
+Package: libghc-quickcheck-instances-doc
+Architecture: all
+Section: doc
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Description: common QuickCheck instances; documentation
+ QuickCheck instances.
+ .
+ The goal is to supply QuickCheck instances for
+ types provided by the Haskell Platform.
+ .
+ For information on writing a test-suite with Cabal
+ see <http://www.haskell.org/cabal/users-guide/#test-suites>
+ .
+  Author: Antoine Latter
+  Upstream-Maintainer: aslatter@gmail.com
+ .
+ This package contains the documentation files.
