@@ -1,4 +1,45 @@
-0.3.33
+0.3.28
+
+* Add instances for `Data.Array.Byte.ByteArray` (`base-4.17`)
+* Add instances for `Data.Primitive.ByteArray` (`primitive`)
+
+0.3.27
+
+* Add instances for `Backwards`, `Reverse` and `Lift` from `transformers`
+
+0.3.26.1
+
+* Support `hashable-1.4`
+
+0.3.26
+
+* Support base-4.16 / GHC-9.2
+* Add instances for `text-short`'s `ShortText` type
+* Add instances for `Solo`
+* Fix bug in `CoArbitrary (Hashed a)` instance
+
+0.3.25.2
+
+* Fix bug in QuarterOfYear instance
+
+0.3.25.1
+
+* Support `QuickCheck-2.14.2`
+* Support `bytestring-0.11`
+
+0.3.25
+
+* Add types from `time-1.11` / `time-compat-1.9.4`: `Month`, `Quarter`, `QuarterOfYear`
+
+0.3.24
+
+* Add `strict` instances.
+* Add `data-fix` instances.
+* Improve 'Arbitrary Tree' instance and add `Function Tree` instance.
+* Require `QuickCheck-2.14.1`
+* Drop `base-compat` dependency
+
+0.3.23
 
 * Add `these` instances.
 
